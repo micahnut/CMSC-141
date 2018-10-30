@@ -1,0 +1,83 @@
+MP1 (Paprazzi, Grammar Nazi)
+General Description
+Before a compiler converts a source file into a machine readable code, the syntax of the source file is checked first. For this MP, you are going to simulate this syntax checking for a source code written in c.
+
+Collaboration
+You may collaborate with your classmates when working on this MP. But you are to limit the number of members to at most 4. You are to write the names of your collaborators as a comment in your submission. This means that you are to turn in the MP individually. No one should be in more than one collaboration group.
+
+Scope
+The MP will require you to check the syntax of the following expressions in c:
+
+variable declaration
+function declaration
+function definition
+Variable declaration
+The MP will stick with primitive types. Arrays will not be in scope. The types are:
+
+int
+char
+float
+double
+Multiple declarations, including those with initializations, are in scope. This also means that identifiers have to be checked. They should follow the naming rule of c, i.e. they can start with '_' or any letter from the English alphabet, followed by 0 or more alpha-numeric characters, including the '_'.
+
+Samples
+int x;
+char c,h;
+float pi = 3.1416;
+double x, y, z = 6.022140857;
+Function declaration
+In a similar fashion, what will be in scope are functions returning primitive type values only. In addition, functions that do not return any value, i.e. declared as void, will be in scope as well. Functions with and without any argument list are in scope. And like in variable declarations, multiple function declarations are in scope, too.
+
+Samples
+void display();
+void compute(void);
+int square(int);
+int power(int,int);
+char toLower(char);
+double squareRoot(float);
+int gcd(int,int), lcm(int,int);
+int isPrime(int n);
+Function definition
+The same types of functions as those in function declaration are in scope. What will be interesting here is that the variable declaration described above are in scope in function definition, including the following:
+
+assignment statements
+assignment statements with arithmetic expressions
+assignment statements with arithmetic expressions that utilize the parentheses for grouping operations
+return statements (all kinds of statements that are in scope for function definition
+No control structures will be in scope for this MP. There will no input/output statements as well.
+
+Samples
+void test(){
+
+}
+int square(int x){
+    int ans;
+    ans = x * x;
+    return ans;
+}
+int addition(int a, int b){
+    return a+b;
+}
+int compute(int n){
+    int val = (3*(n - 5)) - 49;
+    return val;
+}
+Input
+The input is going to be a file. This file will contain a number of lines. This name of the input file should be asked from the user. The first line of the input file will be a positive number. This positive, say c, represents the number of test cases there are in the file. The actual test cases will follow in the next line/s.
+
+Output
+The output is going to be a file. The file is going to contain c lines, c being the number of test cases. If the test case is valid, print "VALID <type>." where <type> is any of the following:
+
+VARIABLE DECLARATION
+FUNCTION DECLARATION
+FUNCTION DEFINITION
+Constraints and other instructions
+Implement this using c, c++, or java
+No use of built-in regex
+You are to include all the references you have used in solving this MP.  The references may be your old notes, online resources, etc. Include them in your source file as comments.
+If you have any questions about the MP, post them in the appropriate post found forum's discussion board.
+As an additional reference, please check the sample input file and output file provided for this MP.
+ 
+mpa1.in mpa1.in
+ 
+mpa1.out mpa1.out
