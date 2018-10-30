@@ -1,0 +1,9 @@
+Turing Machine Simulator
+Make a Turing machine simulation of for the power operator, i.e. xy. Assume all inputs are positive. Represent the inputs as strings of 1. If x = 7, and y = 3, this means that you are to represent x as 1111111 and y as 111. Show the configuration of the Turing tape for every computation of the machine does. Initially, the tape should contain x and y separated by the '#'. Below is a sample initial tape configuration (the b's are blanks. You may use some other symbol if you wish):
+
+1	1	1	1	1	1	1	1	#	1	1	1	b	b	b	b	b	b	b	b
+Simulate the operation of the Turing machine that computes for xy. Again, show the configuration of the tape for every computation made. You can use the cursor (blinking _ ) to show where the tape head is going or you may change the background color of the cell to show direction or the movement of the tape head.
+
+Ask the user to enter 2 positive numbers (integers). And use these as the inputs for the tape.
+
+Follow the same instructions for the second problem.
